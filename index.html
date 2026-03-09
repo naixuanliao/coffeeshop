@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="coffeestyle.css">
+</head>
+<body>
+    <header>
+        <div class="title">
+            <a href="#home">
+                <img src="logo.png" alt="morning coffee logo" class="logo">
+            </a>
+        </div>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <p>Here every cup tells a story. Handcrafted coffee, warm atmosphere, and unforgettable moments.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <img src="about.png">
+            </div>
+
+            <div class="about-text">
+                <h1>About</h1>
+                <p>Morning Coffee Co.不只是賣咖啡的地方，更是一個社群的空間。無論是來自附近的上班族、學生，還是漫步的旅人，都能在這裡感受到家的溫暖。每一次咖啡香的氤氳，都像是一個溫柔的早安，提醒你今天依然充滿可能。</p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="menu">
+        <h1>Menu</h1>
+
+        <div class="menu-wrapper">
+
+            <button class="menu-btn left" onclick="scrollMenu(-1)">&#10094;</button>
+
+            <div class="menu-scroll" id="menuScroll">
+                <div class="menu-container">
+                    <div class="menu-item">
+                        <img src="espresso.png" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p>$120</p>
+                        <p>Rich and bold coffee with a smooth crema.</p>
+                    </div>
+
+                <div class="menu-item">
+                        <img src="latte.png" alt="Latte">
+                        <h3>Latte</h3>
+                        <p>$150</p>
+                        <p>Espresso blended with steamed milk.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="cappuccino.png" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>$180</p>
+                        <p>A perfect balance of espresso, milk and foam.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="Matcha.png" alt="MatchaLatte">
+                        <h3>Matcha Latte</h3>
+                        <p>$200</p>
+                        <p>Japanese matcha with steamed milk.</p>
+                    </div>
+
+                    <div class="menu-item">
+                        <img src="mocha.png" alt="MochaLatte">
+                        <h3>Mocha Latte</h3>
+                        <p>$220</p>
+                        <p>Chocolatey espresso with silky steamed milk.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="menu-btn right" onclick="scrollMenu(1)">&#10095;</button>
+    
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h3>聯絡我們</h3>
+                <p>Morning Coffee Co. Shop</p>
+                <p>123 Coffee Street, Taipei, Taiwan</p>
+                <p>Phone: +886 2 1234 5678</p>
+                <p>Email: info@morningcoffee.com</p>
+
+                <!--社群連結-->
+                <div class="social-links">
+                    <a href="#"><img src="facebook.png" alt="Facebook" class="fb-icon"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram" class="ig-icon"></a>
+                </div>
+
+            </div>
+            
+        </div>
+
+        
+    </section>
+
+    <footer>
+        <p>© 2026 Morning Coffee Co. All Rights Reserved</p>
+    </footer>
+
+<script>
+function scrollMenu(direction){
+    const container = document.getElementById("menuScroll");
+    const scrollAmount = 300;
+
+    container.scrollBy({
+        left: direction * scrollAmount,
+        behavior: "smooth"
+    });
+}
+</script>
+
+<script>
+window.addEventListener("scroll", function(){
+    const header = document.querySelector("header");
+
+    if(window.scrollY > 50){
+        header.style.background = "rgba(255,255,255,0.98)";
+        header.style.boxShadow = "0 2px 10px rgba(0,0,0,0.1)";
+    }else{
+        header.style.boxShadow = "none";
+    }
+});
+</script>
+
+</body>
+</html>

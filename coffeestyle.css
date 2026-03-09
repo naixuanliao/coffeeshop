@@ -206,15 +206,14 @@ section {
 /* 社群圖示 */
 /* Facebook 圖示 */
 .fb-icon{
-    width: 45px;
-    height: 45px;
+    width: 35px;
+    height: 35px;
 }
 
 /* Instagram 圖示 */
 .ig-icon{
     width: 35px;
     height: 35px;
-    transform: translateY(-5px); /* 往上移2px */
 }
 
 /* hover 放大 */
@@ -265,7 +264,7 @@ header{
 
 /* Hero */
 .hero{
-    height: 450px;
+    height: auto;
 }
 
 .hero-text{
@@ -306,6 +305,10 @@ header{
     font-size: 24px;
 }
 
+.btn:hover{
+    background:#6b452b;
+}
+
 /* Contact */
 .contact-container{
     flex-direction: column;
@@ -324,8 +327,8 @@ header{
 }
 
 .ig-icon{
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
 }
 
 /* Footer */

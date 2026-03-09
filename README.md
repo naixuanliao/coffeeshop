@@ -12,6 +12,7 @@ Interactive Menu: Custom horizontal scroll gallery for products.
 Polished UI: Smooth CSS transitions and hover effects for a premium feel.
 
 
+
 (2) Built With
 
 HTML5: Semantic and SEO-friendly structure.
@@ -19,6 +20,7 @@ HTML5: Semantic and SEO-friendly structure.
 CSS3: Flexbox, Grid, and Media Queries for adaptive layouts.
 
 Vanilla JS: Light-weight scripts for scroll-based interactions.
+
 
 
 (3) Structure
